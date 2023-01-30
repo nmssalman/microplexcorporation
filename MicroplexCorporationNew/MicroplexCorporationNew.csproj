@@ -1,12 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.17" />
+    <PackageReference Include="Stripe.net" Version="41.4.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -14,5 +15,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Stripe.net" />
   </ItemGroup>
 </Project>
